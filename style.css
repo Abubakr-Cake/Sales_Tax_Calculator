@@ -1,0 +1,105 @@
+:root {
+  --primary: #4a90e2;
+  --secondary: #e8f0fe;
+  --accent: #d9f7be;
+  --text: #333;
+  --border: #ccc;
+  --bg: #f4f6f8;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  padding: 40px;
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--primary);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background: white;
+}
+
+th {
+  background-color: var(--primary);
+  color: white;
+  padding: 12px;
+  text-transform: uppercase;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  text-align: center;
+  padding: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  background: var(--secondary);
+  appearance: textfield;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+td[data-auto="true"] {
+  background: var(--accent);
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 16px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 8px;
+}
+
+button:hover {
+  background: #2f75c3;
+}
+
+.delete-btn {
+  background: #e74c3c;
+}
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+.totals-label {
+  text-align: right;
+  font-weight: bold;
+}
+
+tfoot td {
+  font-weight: bold;
+  background: #eef5fb;
+}

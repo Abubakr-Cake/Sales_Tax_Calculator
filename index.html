@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sales Tax Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💸 Sales Tax Calculator</h1>
+    <div class="table-wrapper">
+      <table id="taxTable">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Retail Rate</th>
+            <th>Qty</th>
+            <th>Description</th>
+            <th>Rate</th>
+            <th>Amount Excl. Tax</th>
+            <th>Sales Tax (18%)</th>
+            <th>Amount Incl. Tax</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5" class="totals-label">Totals</td>
+            <td id="totalExcl">0</td>
+            <td id="totalTax">0</td>
+            <td id="totalIncl">0</td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div class="buttons">
+      <button onclick="exportCSV()">📥 Export CSV</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
